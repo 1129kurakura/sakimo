@@ -27,9 +27,9 @@ window.SITE = {
 
   /*
    * デモの場所
-   * いまは同じフォルダの demo/ を開きます。デモを別の場所に公開したら、そのURLに書き換えます。
+   * 公開中のデモのURLです。デモの場所が変わったら、ここを書き換えます。
    */
-  demo: '../demo/index.html',
+  demo: 'https://1129kurakura.github.io/sakimori-mvp/demo/',
 
   // ヘッダーのメニュー（最後の1つは黒いボタンになります）
   nav: [
