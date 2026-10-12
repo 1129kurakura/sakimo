@@ -1,0 +1,158 @@
+/* ============================================================
+   SAKIMO 紹介サイトだけで使う追加スタイル
+   ベース（base.css / pages.css）は u&me 公式サイトと同じものです。
+   ============================================================ */
+
+:root {
+  /* SAKIMO の色（淡い面の色 / 文字に使う濃い色）。アプリの「藍」と「山吹」 */
+  --sakimo: #dfe6f3;
+  --sakimo-deep: #24407a;
+  --kids: #f8ead0;
+  --kids-deep: #9a5b00;
+  --safe-deep: #2f8f72;
+}
+
+.tone-sakimo {
+  --tone: var(--sakimo);
+  --tone-deep: var(--sakimo-deep);
+}
+
+.tone-kids {
+  --tone: var(--kids);
+  --tone-deep: var(--kids-deep);
+}
+
+/* kindchord のロゴ：kind を太く、chord を細く */
+.logo__thin {
+  font-weight: 300;
+}
+
+/* 数字で見る課題（facts の見出しを数字にする） */
+.fact__num {
+  font-family: var(--font-latin);
+  font-size: clamp(2.25rem, 1.6rem + 2.6vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--tone-deep);
+}
+
+.fact__num small {
+  margin-left: 0.1em;
+  font-family: var(--font-jp);
+  font-size: 0.4em;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.source {
+  margin-top: 1.25rem;
+  font-size: var(--text-small);
+  color: var(--ink-soft);
+}
+
+.source a {
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+
+/* 段階（ステップ1→2→3→そつぎょう）は4列 */
+@media (min-width: 48rem) {
+  .facts--steps {
+    --facts-columns: 2;
+  }
+}
+
+@media (min-width: 75rem) {
+  .facts--steps {
+    --facts-columns: 4;
+  }
+}
+
+/* 約束（暗い面）の4項目 */
+@media (min-width: 48rem) {
+  .steps--four {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 75rem) {
+  .steps--four {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* スマホの画面写真を2枚並べるとき、角を端末らしく */
+.figure--screens img {
+  border: 0.3rem solid var(--ink);
+  border-radius: 1.6rem;
+  background: var(--ink);
+}
+
+/* 横長の画面写真の背景に、色の面を敷く */
+.figure--tone {
+  padding: clamp(0.75rem, 3vw, 2.5rem);
+  border-radius: var(--radius-l);
+  background: var(--tone);
+}
+
+.figure--tone img {
+  border: 0;
+  box-shadow: 0 1.5rem 4rem -1.5rem rgba(24, 23, 28, 0.3);
+}
+
+/* 相談先の一覧 */
+.helplines {
+  border-bottom: 1px solid var(--line);
+}
+
+.helpline {
+  display: grid;
+  gap: 0.15rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.helpline__name {
+  font-weight: 700;
+}
+
+.helpline__text {
+  font-size: 0.9375rem;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+
+.helpline__tel {
+  font-family: var(--font-latin);
+  font-size: 1.375rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--sakimo-deep);
+}
+
+@media (min-width: 48rem) {
+  .helpline {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    column-gap: 2rem;
+  }
+
+  .helpline__tel {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+}
+
+/* 暗い面の上の、ふちだけのボタン */
+.button--ghost-light {
+  border-color: var(--night-line);
+  background: transparent;
+  color: var(--paper);
+}
+
+.button--ghost-light:hover {
+  border-color: var(--paper);
+  background: var(--paper);
+  color: var(--night);
+}

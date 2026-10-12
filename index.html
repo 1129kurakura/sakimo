@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; base-uri 'self'; object-src 'none'"
+    />
+    <title>SAKIMO｜投稿する前に、ひと呼吸。｜kindchord</title>
+    <meta
+      name="description"
+      content="SAKIMO は、SNSに投稿する前の文章と写真から、家・学校・いつもの行動が分かってしまう手がかりを見つけ、漏れた後まで守る見守りサービスです。kindchord が開発しています。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SAKIMO｜投稿する前に、ひと呼吸。" />
+    <meta property="og:description" content="身バレを、先回りして防ぐ。SNS見守りサービス SAKIMO。" />
+    <meta name="theme-color" content="#f4f2ed" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
+    />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+    <link rel="stylesheet" href="assets/css/sakimo.css" />
+    <script src="assets/js/boot.js"></script>
+  </head>
+  <body id="top">
+    <header class="site-header" id="site-header"></header>
+
+    <main class="tone-sakimo">
+      <!-- ============ 紹介 ============ -->
+      <section class="wrap" aria-labelledby="product-title">
+        <p class="hero__eyebrow">kindchord のプロダクト</p>
+        <h1 class="product-hero__name" id="product-title">SAKIMO<small>さきも ― SNS見守りサービス</small></h1>
+        <div class="product-hero__foot">
+          <div>
+            <p class="product-hero__catch">投稿する前に、ひと呼吸。身バレを、先回りして防ぐ。</p>
+            <p class="product-hero__lead">
+              SNSに投稿する前の文章と写真から、家・学校・いつもの行動が分かってしまう手がかりを見つけて、安全な言い換えまで用意します。もし情報が漏れても、何をすればいいかまで案内します。
+            </p>
+          </div>
+          <div class="product-hero__actions">
+            <a class="button" href="../demo/index.html" data-demo-link>
+              デモを触る <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <span class="product-hero__hint">登録なしで試せます。入力した内容は送信されません</span>
+          </div>
+        </div>
+
+        <figure class="product-visual" data-reveal>
+          <img
+            class="product-visual__wide"
+            src="assets/img/sakimo-check.webp"
+            alt="SAKIMOの投稿前チェック画面。旅行前の投稿に「今は投稿を待って」と表示され、まずやることが並んでいる"
+            width="1440"
+            height="900"
+            fetchpriority="high"
+          />
+          <img
+            class="phone"
+            src="assets/img/sakimo-phone-verdict.webp"
+            alt="スマホで見た判定画面。お守りの形の見直し度と、まずやること"
+            width="640"
+            height="1386"
+          />
+        </figure>
+      </section>
+
+      <!-- ============ 課題・解決案・仕組み・漏洩・キッズ・展望 ============ -->
+      <div class="wrap">
+        <section class="chapter" id="problem" aria-labelledby="problem-title">
+          <div class="chapter__head">
+            <span class="chapter__no">01</span>
+            <p class="chapter__label">課題</p>
+          </div>
+          <div data-reveal>
+            <h2 class="chapter__title" id="problem-title">1件ずつは何気なくても、まとめると家が分かる。</h2>
+            <div class="prose">
+              <p>
+                SNSで身元が分かってしまうのは、住所を書いたときだけではありません。何気ない投稿が積み重なると、それだけで住んでいる場所や行動が分かってしまいます。
+              </p>
+              <p>
+                たとえば、駅の名前、「家から徒歩5分のパン屋」、そのパン屋で撮った写真の位置情報、「明日から3日間旅行」。どれも普通の投稿ですが、並べると自宅の場所と、家が空く日が分かります。
+              </p>
+              <p>本人は1件ずつしか見ていないので、この組み合わせに気づけません。</p>
+            </div>
+            <ul class="facts chapter__extra">
+              <li class="fact">
+                <p class="fact__num">74.2<small>%</small></p>
+                <p class="fact__text">SNSがきっかけで被害にあった子どもが、相手と知り合う最初の投稿をしたのは、子ども本人だった割合。</p>
+              </li>
+              <li class="fact">
+                <p class="fact__num">約7<small>割</small></p>
+                <p class="fact__text">プロフィールを公開している青少年のうち、悪用のリスクを「考えたことがない」「感じない」と答えた割合。</p>
+              </li>
+              <li class="fact">
+                <p class="fact__num">62<small>%</small></p>
+                <p class="fact__text">スマホを持っている小学6年生の割合。SNSデビューは、年々早くなっています。</p>
+              </li>
+            </ul>
+            <p class="source">
+              出典：<a href="https://www.soumu.go.jp/use_the_internet_wisely/pdf/r7_report_summary.pdf" target="_blank" rel="noopener">総務省 令和7年度 青少年のインターネット利用に関する調査（概要）</a>、<a href="https://www.j-cast.com/2025/02/05501308.html?p=all" target="_blank" rel="noopener">モバイル社会研究所 小中学生のスマホ調査（2024年11月）</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="chapter" id="solution" aria-labelledby="solution-title">
+          <div class="chapter__head">
+            <span class="chapter__no">02</span>
+            <p class="chapter__label">解決案</p>
+          </div>
+          <div data-reveal>
+            <h2 class="chapter__title" id="solution-title">投稿する前に気づかせて、漏れた後まで守る。</h2>
+            <div class="prose">
+              <p>
+                SAKIMOは、投稿を止めるアプリではなく、投稿する前に気づかせるアプリです。禁止されると人は使うのをやめてしまうので、理由と直し方をセットで見せます。
+              </p>
+              <p>
+                書いた文章と写真を、これまでの投稿と合わせて確認し、「知らない人からはこう見えています」と示します。危ないところが見つかったら、位置情報を消した写真と、個人が分かる部分を伏せた文章をワンタップで用意します。
+              </p>
+              <p>生成AIに社内資料やパスワードを貼り付けてしまう、新しい漏れ方にも対応します。</p>
+            </div>
+            <ul class="facts facts--four chapter__extra">
+              <li class="fact">
+                <h3 class="fact__title">投稿前チェック</h3>
+                <p class="fact__text">学校名・駅名・留守の予告・写真の位置情報など、25種類の手がかりを見つける。</p>
+              </li>
+              <li class="fact">
+                <h3 class="fact__title">組み合わせの分析</h3>
+                <p class="fact__text">過去の投稿と合わせて、自宅や通学ルートがどこまで絞られるかを示す。</p>
+              </li>
+              <li class="fact">
+                <h3 class="fact__title">安全な言い換え</h3>
+                <p class="fact__text">伏せた文章と、位置情報を消した写真をワンタップで用意する。</p>
+              </li>
+              <li class="fact">
+                <h3 class="fact__title">AIへの入力も</h3>
+                <p class="fact__text">パスワード・APIキー・社外秘の資料を、送る前に見つける。</p>
+              </li>
+            </ul>
+            <figure class="figure figure--pair figure--screens chapter__extra">
+              <img
+                src="assets/img/sakimo-phone-funnel.webp"
+                alt="過去の投稿と組み合わせて、日本全国から自宅の徒歩圏まで絞り込まれていく様子"
+                width="640"
+                height="1386"
+                loading="lazy"
+              />
+              <img
+                src="assets/img/sakimo-phone-ai.webp"
+                alt="AIに社内資料を入力しようとしたときの判定画面"
+                width="640"
+                height="1386"
+                loading="lazy"
+              />
+              <figcaption>左：投稿の組み合わせで絞り込まれていく範囲。右：AIへの入力のチェック。</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="chapter" id="how" aria-labelledby="how-title">
+          <div class="chapter__head">
+            <span class="chapter__no">03</span>
+            <p class="chapter__label">仕組み</p>
+          </div>
+          <div data-reveal>
+            <h2 class="chapter__title" id="how-title">判定は、あなたの端末の中だけで。</h2>
+            <div class="prose">
+              <p>
+                投稿前のチェックは、すべてスマホやパソコンの中で行います。投稿する前の文章を外に送ってしまっては、守るためのサービスが漏れる入口になってしまうからです。
+              </p>
+              <p>
+                判定には、決まったルールで手がかりを見つけ、それらをつなぎ合わせる仕組みを使っています。入力するそばから結果が出て、何度使ってもお金がかかりません。どの警告にも理由があるので、なぜ危ないのかを説明できます。
+              </p>
+              <p>写真に写った制服や景色など、ルールでは分からないものだけ、本人が選んだときにAIで詳しく見ます。</p>
+            </div>
+            <ul class="facts chapter__extra">
+              <li class="fact">
+                <h3 class="fact__title">端末の中で判定</h3>
+                <p class="fact__text">書いた内容はどこにも送られない。ネットがなくても動く。</p>
+              </li>
+              <li class="fact">
+                <h3 class="fact__title">理由が分かる</h3>
+                <p class="fact__text">警告ごとに「なぜ危ないか」と「どうすればいいか」を表示する。</p>
+              </li>
+              <li class="fact">
+                <h3 class="fact__title">必要なときだけAI</h3>
+                <p class="fact__text">写真の写り込みや文脈は、本人の同意があるときだけAIで確認する。</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="chapter" id="monitor" aria-labelledby="monitor-title">
+          <div class="chapter__head">
+            <span class="chapter__no">04</span>
+            <p class="chapter__label">漏洩の見守り</p>
+          </div>
+          <div data-reveal>
+            <h2 class="chapter__title" id="monitor-title">漏れた後も、ひとりにしない。</h2>
+            <div class="prose">
+              <p>
+                気をつけていても、情報が漏れてしまうことはあります。そのとき困るのは、何をすればいいのか分からないまま、時間がたって広がってしまうことです。
+              </p>
+              <p>
+                SAKIMOは、登録した情報がネット上に出ていないかを見守り、見つけたら「何が・どこで・どこから・どれくらい危ないか・何をすればいいか」をまとめて知らせます。削除をお願いする文章も、その場で作れます。
+              </p>
+              <p>つきまといなど現実の危険につながりそうなときは、人の手と、現実の警備につなぎます。</p>
+            </div>
+            <figure class="figure figure--tone chapter__extra">
+              <img
+                src="assets/img/sakimo-monitor.webp"
+                alt="漏洩の見守り画面。見つかった情報ごとに、何が・どこで・流出元・やることが並んでいる"
+                width="1440"
+                height="900"
+                loading="lazy"
+              />
+            </figure>
+            <ul class="facts chapter__extra">
+              <li class="fact">
+                <h3 class="fact__title">アプリで知らせる</h3>
+                <p class="fact__text">漏れた内容と対処のしかたを、すぐに案内する。ほとんどはここで解決する。</p>
+              </li>
+              <li class="fact">
+                <h3 class="fact__title">専門スタッフが対応</h3>
+                <p class="fact__text">削除依頼の代行や、なりすましへの対応、相談窓口へのつなぎを行う。</p>
+              </li>
+              <li class="fact">
+                <h3 class="fact__title">現実の警備につなぐ</h3>
+                <p class="fact__text">自宅が知られた兆しがあれば、見守り端末や駆けつけと連携する。</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="chapter tone-kids" id="kids" aria-labelledby="kids-title">
+          <div class="chapter__head">
+            <span class="chapter__no">05</span>
+            <p class="chapter__label">キッズ見守り</p>
+          </div>
+          <div data-reveal>
+            <h2 class="chapter__title" id="kids-title">はじめてのスマホを、禁止ではなく練習に。</h2>
+            <div class="prose">
+              <p>
+                スマホを持たせるとき、保護者の選択肢は「全部禁止」か「任せきり」になりがちです。でも本当に必要なのは、子どもが自分で気づけるようになるまでの練習期間です。
+              </p>
+              <p>
+                キッズ見守りでは、子どもが投稿しようとすると、キャラクターのマモルがやさしい言葉で危ないところを教えます。知らない人から学校を聞かれたり、ひみつにさせようとされたりしたら、ブロックとおうちの人への相談をすすめます。
+              </p>
+              <p>
+                保護者に届くのは、中身ではなくお知らせと、話しかけるきっかけです。学年に合わせて見守りを少しずつゆるめ、高校生で「そつぎょう」します。
+              </p>
+            </div>
+            <figure class="figure figure--pair figure--screens chapter__extra">
+              <img
+                src="assets/img/sakimo-kids-child.webp"
+                alt="子どものスマホ。知らない人からのメッセージに「この人には気をつけて！」と表示されている"
+                width="636"
+                height="1356"
+                loading="lazy"
+              />
+              <img
+                src="assets/img/sakimo-kids-parent.webp"
+                alt="保護者のスマホ。注意が必要なメッセージのお知らせと、叱らずに話すためのヒント"
+                width="636"
+                height="1356"
+                loading="lazy"
+              />
+              <figcaption>左：子どものスマホ。右：同じときに保護者のスマホに届くお知らせ。</figcaption>
+            </figure>
+            <ul class="facts facts--steps chapter__extra">
+              <li class="fact">
+                <h3 class="fact__title">ステップ1 はじめて</h3>
+                <p class="fact__text">小1〜小4のめやす。気になる投稿は、おうちの人のOKが出てから。</p>
+              </li>
+              <li class="fact">
+                <h3 class="fact__title">ステップ2 じぶんで考える</h3>
+                <p class="fact__text">小5〜中1のめやす。本人が判断し、見直しが必要なときだけ知らせる。</p>
+              </li>
+              <li class="fact">
+                <h3 class="fact__title">ステップ3 そつぎょう準備</h3>
+                <p class="fact__text">中2〜中3のめやす。保護者に届くのは、週の件数と緊急のときだけ。</p>
+              </li>
+              <li class="fact">
+                <h3 class="fact__title">そつぎょう</h3>
+                <p class="fact__text">高校生から。自分のための投稿前チェックとして使い続けられる。</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <!-- ============ 安心の約束 ============ -->
+      <section class="vision" id="promise" aria-labelledby="promise-title">
+        <div class="wrap">
+          <p class="label label--light" data-reveal>Promise</p>
+          <h2 class="vision__title" id="promise-title" data-reveal>見張るのではなく、<br />見守る。</h2>
+          <div class="prose vision__text" data-reveal>
+            <p>SAKIMOは、使う人が安心できることを、機能より先に決めています。</p>
+            <p>守るためのサービスが、新しい不安の種になってはいけないからです。次の4つは、どの機能をつくるときにも変えません。</p>
+          </div>
+          <ol class="steps steps--four">
+            <li class="step" data-reveal>
+              <p class="step__no">01</p>
+              <h3 class="step__title">端末の中で判定する</h3>
+              <p class="step__text">投稿する前の文章を、サーバーに送ったり保存したりしない。</p>
+            </li>
+            <li class="step" data-reveal>
+              <p class="step__no">02</p>
+              <h3 class="step__title">中身はのぞかない</h3>
+              <p class="step__text">保護者に届くのは、件数と緊急のお知らせだけ。本人の同意が前提。</p>
+            </li>
+            <li class="step" data-reveal>
+              <p class="step__no">03</p>
+              <h3 class="step__title">止めずに、気づかせる</h3>
+              <p class="step__text">投稿をブロックせず、理由と安全な言い換えを提案する。</p>
+            </li>
+            <li class="step" data-reveal>
+              <p class="step__no">04</p>
+              <h3 class="step__title">漏れた後まで寄りそう</h3>
+              <p class="step__text">知らせて終わりにせず、対処と相談先まで案内する。</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============ 困ったときの相談先 ============ -->
+      <section class="section wrap" id="help" aria-labelledby="help-title">
+        <div class="about__grid">
+          <div class="section__head" data-reveal>
+            <p class="label">Help</p>
+            <h2 class="about__title" id="help-title">困ったときは、<br />ひとりで抱えこまないで。</h2>
+          </div>
+          <div data-reveal>
+            <ul class="helplines">
+              <li class="helpline">
+                <p class="helpline__name">警察（緊急）</p>
+                <p class="helpline__text">つきまとわれている、家の前に知らない人がいる など、今すぐ身の危険を感じるとき。</p>
+                <p class="helpline__tel">110</p>
+              </li>
+              <li class="helpline">
+                <p class="helpline__name">警察相談専用電話</p>
+                <p class="helpline__text">ストーカー・脅し・なりすましなど、急ぎではないけれど相談したいとき。</p>
+                <p class="helpline__tel">#9110</p>
+              </li>
+              <li class="helpline">
+                <p class="helpline__name">違法・有害情報相談センター</p>
+                <p class="helpline__text">ネットの書き込みを消したいとき。総務省の支援事業で、Webから相談できます。</p>
+                <p class="helpline__tel">Web</p>
+              </li>
+              <li class="helpline">
+                <p class="helpline__name">24時間子供SOSダイヤル</p>
+                <p class="helpline__text">いじめやネットのトラブルなど、子どもも保護者も相談できます（文部科学省）。</p>
+                <p class="helpline__tel">0120-0-78310</p>
+              </li>
+            </ul>
+            <p class="source">番号や受付時間は、各窓口の公式情報で確認してください。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ これからの展望 ============ -->
+      <div class="wrap">
+        <section class="chapter section" id="future" aria-labelledby="future-title">
+          <div class="chapter__head">
+            <span class="chapter__no">06</span>
+            <p class="chapter__label">これからの展望</p>
+          </div>
+          <div data-reveal>
+            <h2 class="chapter__title" id="future-title">まず、身近な人に使ってもらう。</h2>
+            <div class="prose">
+              <p>
+                次の一歩は、学生と保護者に実際に試してもらうことです。いまは架空のアカウントで動くデモで、本当に行動が変わるかは、使ってもらわないと分からないからです。
+              </p>
+              <p>
+                自分の過去の投稿で試せる機能をつくり、警告を見て投稿を直した人がどれくらいいるかを確かめます。集まった声は、判定のルールと、言葉づかいの改善に生かします。
+              </p>
+              <p>
+                その先は、スマホの共有メニューから使える形にし、学校の情報モラルの授業や、家族の見守りサービスと組み合わせて広げていきます。
+              </p>
+            </div>
+            <div class="product-hero__actions chapter__extra">
+              <a class="button" href="../demo/index.html" data-demo-link>デモを触る <span class="arrow" aria-hidden="true">→</span></a>
+              <span class="product-hero__hint">デモの「サンプルで試してみる」から始められます</span>
+            </div>
+            <p class="note">
+              SAKIMOは、マイナビSTART「課題解決プロジェクト」の出題テーマ「先回りの安心」をきっかけに開発しています。出題企業との提携関係はありません。デモに登場する人物・地名・店名・サイトは、すべて架空のサンプルです。
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer" id="site-footer"></footer>
+
+    <script src="assets/js/site-data.js"></script>
+    <script src="assets/js/site.js"></script>
+  </body>
+</html>
